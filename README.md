@@ -1,16 +1,16 @@
 # ValeryRepository
 
-# Install dependencies
-pip install -r requirements.txt
-
-# Run all tests
-pytest
+# Run all login/logout tests
+pytest tests/test_login_logout.py -v
 
 # Run specific test
-pytest tests/test_crm.py::TestCrm::test_create_opportunity
+pytest tests/test_login_logout.py::TestLoginLogout::test_successful_login -v
 
 # Run with HTML report
-pytest --html=reports/report.html
+pytest tests/test_login_logout.py --html=reports/login_report.html
 
-# Run in parallel
-pytest -n 4
+# Run with environment variables
+VALID_EMAIL=user@example.com VALID_PASSWORD=password123 pytest tests/test_login_logout.py
+
+# Run BDD tests
+pytest tests/step_defs/ -v
