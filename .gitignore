@@ -1,0 +1,169 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv/
+env.bak/
+venv.bak/
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Test and coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+.pytest_cache/
+reports/
+*.html
+allure-results/
+allure-report/
+
+# Screenshots
+screenshots/
+*.png
+*.jpg
+*.jpeg
+
+# Configuration files with sensitive data
+config/.env
+.env
+.env.local
+.env.*.local
+
+# IDE specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.iml
+.project
+.classpath
+.settings/
+*.code-workspace
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# poetry
+poetry.lock
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# pyre
+.pyre/
+
+# Operating system files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Logs
+logs/
+*.log
+debug.log
+test.log
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Selenium WebDriver binaries
+chromedriver
+geckodriver
+msedgedriver
+drivers/
+
+# Test output
+output/
+*.out
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Local development files
+local_settings.py
+test_settings.py
+
+# Environment variables
+.env.*
+!.env.example
+
+# Docker
+.dockerignore
+*.pid
+
+# Webpack
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ESLint
+.eslintcache
+
+# TypeScript
+*.tsbuildinfo
+
+# Optional: If using Jupyter
+*.ipynb_checkpoints/
+
+# Optional: If using VS Code with Python extension
+.vscode/settings.json
+.vscode/launch.json
+
+# Optional: If using PyCharm
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Optional: If using Sublime Text
+*.sublime-project
+*.sublime-workspace
