@@ -167,3 +167,12 @@ yarn-error.log*
 # Optional: If using Sublime Text
 *.sublime-project
 *.sublime-workspace
+
+reports/
+screenshots/
+.env
+*.log
+.pytest_cache/
+__pycache__/
+venv/
+.DS_Store
