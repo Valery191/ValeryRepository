@@ -1,0 +1,52 @@
+{
+  "customers": [
+    {
+      "first_name": "Olivia",
+      "last_name": "Bennett",
+      "email": "olivia.bennett@example.com",
+      "phone": "+1-202-555-0147",
+      "company": "Northwind Traders",
+      "status": "Active"
+    },
+    {
+      "first_name": "Marcus",
+      "last_name": "Reed",
+      "email": "marcus.reed@example.com",
+      "phone": "+1-202-555-0192",
+      "company": "Globex Corporation",
+      "status": "Prospect"
+    },
+    {
+      "first_name": "Sofia",
+      "last_name": "Alvarez",
+      "email": "sofia.alvarez@example.com",
+      "phone": "+1-202-555-0163",
+      "company": "Initech",
+      "status": "Active"
+    }
+  ],
+  "deals": [
+    {
+      "name": "Enterprise License Renewal",
+      "stage": "Negotiation",
+      "amount": "24500",
+      "close_date": "2025-12-15"
+    },
+    {
+      "name": "Onboarding Package",
+      "stage": "Proposal",
+      "amount": "6800",
+      "close_date": "2025-11-30"
+    }
+  ],
+  "invalid_credentials": [
+    {
+      "username": "wrong.user@crm-app.local",
+      "password": "WrongPass1!"
+    },
+    {
+      "username": "admin@crm-app.local",
+      "password": "incorrect"
+    }
+  ]
+}
