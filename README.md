@@ -19,61 +19,22 @@ CRM Automation Test Framework is a comprehensive test automation solution for we
 - **Data-Driven Testing** - Support for external test data sources
 - **BDD Support** - Business-readable test scenarios with Gherkin
 
-### 📊 Project Structure
-
-crm_automation/
-├── config/            # Configuration and test data
-├── pages/             # Page Object Model classes
-├── tests/             # Test suites and BDD features
-├── utilities/         # Driver factory, waits, logging, screenshots
-├── reports/           # HTML reports and screenshots (generated)
-└── .github/workflows/ # CI pipeline
-
 ---
 
 ## 🚀 Quick Start
 
 ### Prerequisites
 
-- Python 3.8 or higher
-- pip (Python package manager)
-- Git
-- Chrome/Firefox browser (for local execution)
+Before you begin, ensure you have the following installed:
+
+*   **Python 3.8+** — [Download here](https://www.python.org/downloads/)
+*   **Git** — [Download here](https://git-scm.com/)
+*   **Chrome or Firefox** — for local execution
+*   **pip** — comes pre-installed with Python
 
 ### Installation
 
+**1. Clone the repository:**
 ```bash
-# Clone the repository
-git clone <your-repository-url>
-cd crm_automation
-
-# Create and activate virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Install browser drivers
-python -m playwright install --with-deps
-
-### Running Tests
-
-```bash
-# Full regression suite
-pytest
-
-# Smoke only
-pytest -m smoke
-
-# Specific module
-pytest tests/test_customers.py
-
-# Parallel execution
-pytest -n 4
-
-# With retries on flaky tests
-pytest --reruns 2 --reruns-delay 1
-
-# BDD scenarios
-pytest tests/test_login_bdd.py
+git clone https://github.com/Valery191/ValeryRepository.git
+cd ValeryRepository
