@@ -19,14 +19,15 @@ CRM Automation Test Framework is a comprehensive test automation solution for we
 - **Data-Driven Testing** - Support for external test data sources
 - **BDD Support** - Business-readable test scenarios with Gherkin
 
-### 📊 Test Coverage
+### 📊 Project Structure
 
-| Module | Coverage | Status |
-|--------|----------|--------|
-| CRM Management | 85% | ✅ |
-| Authentication | 90% | ✅ |
-| Customer Management | 75% | ✅ |
-| Pipeline Verification | 70% | ✅ |
+crm_automation/
+├── config/            # Configuration and test data
+├── pages/             # Page Object Model classes
+├── tests/             # Test suites and BDD features
+├── utilities/         # Driver factory, waits, logging, screenshots
+├── reports/           # HTML reports and screenshots (generated)
+└── .github/workflows/ # CI pipeline
 
 ---
 
