@@ -55,3 +55,24 @@ pip install -r requirements.txt
 
 # Install browser drivers
 python -m playwright install --with-deps
+
+### Running Tests
+
+```bash
+# Full regression suite
+pytest
+
+# Smoke only
+pytest -m smoke
+
+# Specific module
+pytest tests/test_customers.py
+
+# Parallel execution
+pytest -n 4
+
+# With retries on flaky tests
+pytest --reruns 2 --reruns-delay 1
+
+# BDD scenarios
+pytest tests/test_login_bdd.py
