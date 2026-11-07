@@ -36,5 +36,57 @@ Before you begin, ensure you have the following installed:
 
 **1. Clone the repository:**
 ```bash
-git clone https://github.com/Valery191/ValeryRepository.git
-cd ValeryRepository
+git clone https://github.com/CRM/CRMRepository.git
+cd CRMRepository
+```
+
+**2. Create and activate virtual environment:**
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+
+**3. Install dependencies and browser drivers:**
+```bash
+pip install -r requirements.txt
+python -m playwright install --with-deps
+```
+
+---
+## 📂 Project structure
+```text
+crm_automation/
+├── config/                 # Configuration and test data
+├── pages/                  # Page Object Model classes
+├── tests/                  # Test suites and BDD features
+│   └── features/           # Gherkin scenarios
+├── utilities/              # Driver factory, waits, logging, screenshots
+├── reports/                # HTML reports and screenshots (generated)
+├── .github/workflows/      # CI pipeline
+├── .env.example            # Environment variables template
+├── pytest.ini              # Pytest configuration
+├── requirements.txt        # Project dependencies
+└── README.md               # Project documentation
+```
+
+---
+## Running Tests
+```bash
+# Full regression suite
+pytest
+
+# Smoke only
+pytest -m smoke
+
+# Specific module
+pytest tests/test_customers.py
+
+# Parallel execution
+pytest -n 4
+
+# With retries on flaky tests
+pytest --reruns 2 --reruns-delay 1
+
+# BDD scenarios
+pytest tests/test_login_bdd.py
+```
