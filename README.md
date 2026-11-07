@@ -90,3 +90,6 @@ pytest --reruns 2 --reruns-delay 1
 # BDD scenarios
 pytest tests/test_login_bdd.py
 ```
+### 📊 Test Reports
+
+![Test Report](Test report 11.7.png)
