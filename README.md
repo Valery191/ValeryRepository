@@ -92,4 +92,4 @@ pytest tests/test_login_bdd.py
 ```
 ### 📊 Test Reports
 
-![Test Report](Test report 11.7.png)
+![Test Report](Testreport11.7.png)
